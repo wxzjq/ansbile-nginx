@@ -1,0 +1,14 @@
+
+nginx1      ansible_host=54.237.163.253
+
+
+#---------------------------------------------------------
+# OS groups
+#---------------------------------------------------------
+[os_ubuntu]
+nginx1
+
+[os_ubuntu:vars]
+ansible_ssh_user=ubuntu
+ansible_python_interpreter=/usr/bin/python3
+# Ubuntu comes with python 3 pre-installed
